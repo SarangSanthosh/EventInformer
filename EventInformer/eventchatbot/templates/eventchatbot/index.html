@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Chatbot</title>
-    <link rel="stylesheet" href="style.css" />
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'eventchatbot/style.css' %}" />
   </head>
   <body>
     <h1>Event AI assistant</h1>
@@ -20,6 +21,6 @@
         <button onclick="sendMessage()">Send</button>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="{% static 'eventchatbot/script.js' %}"></script>
   </body>
 </html>
