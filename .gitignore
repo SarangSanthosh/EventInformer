@@ -27,3 +27,6 @@ media/
 
 # macOS specific
 .DS_Store
+
+#firebase private key
+project/EventInformer/firebase/firebase_service_account.json
