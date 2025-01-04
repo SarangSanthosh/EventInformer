@@ -39,6 +39,9 @@ h1 {
   margin-bottom: 15px;
   padding-left: 15px;
   scrollbar-width: thin;
+  display: flex; /* Add this to allow flexbox */
+  flex-direction: column; /* Align messages vertically */
+  gap: 10px;
 }
 
 .message {
@@ -51,14 +54,14 @@ h1 {
 
 .message.user {
   background-color: #cce4ff;
-  align-self: flex-end;
+  align-self: flex-end; /* Aligns user messages to the right */
   border-radius: 12px 12px 0 12px;
   box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
 }
 
 .message.bot {
   background-color: #d1f8d3;
-  align-self: flex-start;
+  align-self: flex-start; /* Aligns bot messages to the left */
   border-radius: 12px 12px 12px 0;
   box-shadow: 0 2px 5px rgba(72, 186, 45, 0.2);
 }
