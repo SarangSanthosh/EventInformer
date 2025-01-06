@@ -48,3 +48,4 @@ def format_event_response(event_data):
         f"Description: {description}\n"
         f"Speakers: {speakers}"
     )
+
