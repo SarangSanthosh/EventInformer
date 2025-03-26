@@ -1,27 +1,118 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Chatbot</title>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
-    <meta name="csrf-token" content="{{ csrf_token }}" />
-  </head>
-  <body>
-    <h1>Event AI assistant</h1>
+</head>
+<body>
+    <h1>Event AI Assistant</h1>
+
     <div class="chatbot-container">
-      <div class="messages" id="messages"></div>
-      <div class="input-container">
-        <input
-          type="text"
-          id="user-input"
-          placeholder="Ask me something..."
-          onkeyup="checkEnter(event)"
-        />
-        <button onclick="sendMessage()">Send</button>
-      </div>
+        <div class="messages" id="messages"></div>
+        
+        Embedded Dialogflow Chatbot 
+        <iframe
+            allow="microphone;"
+            width="350"
+            height="430"
+            src="https://console.dialogflow.com/api-client/demo/embedded/35ca2eb5-da16-4d11-a479-9ff024e41eb8">
+        </iframe>
+
+         <div class="input-container">
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Ask me something..."
+                onkeyup="checkEnter(event)"
+            />
+            <button onclick="sendMessage()">Send</button> 
+        </div>
     </div>
+
     <script src="{% static 'script.js' %}"></script>
-  </body>
+</body>
+</html>
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Chatbot</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Event AI Assistant</h1>
+    
+    <div class="chatbot-container">
+        <div class="messages" id="messages"></div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Ask me something...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sendButton = document.getElementById('send-button');
+            const userInput = document.getElementById('user-input');
+            
+            sendButton.addEventListener('click', sendMessage);
+            
+            function sendMessage() {
+                const message = userInput.value.trim();
+                
+                if (message) {
+                    addMessage(message, 'user');
+                    userInput.value = '';
+                    
+                    fetch('/eventchatbot/process/', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({message: message})
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        if (data.reply) {
+                            addMessage(data.reply, 'bot');
+                        } else if (data.error) {
+                            addMessage("Error: " + data.error, 'error');
+                        }
+                    })
+                    .catch(error => {
+                        addMessage("Sorry, I couldn't process your request", 'error');
+                        console.error('Error:', error);
+                    });
+                }
+            }
+            
+            function addMessage(text, sender) {
+                const messagesDiv = document.getElementById('messages');
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `message ${sender}`;
+                messageDiv.textContent = text;
+                messagesDiv.appendChild(messageDiv);
+                messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            }
+            
+            // Handle Enter key
+            userInput.addEventListener('keyup', function(e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+        });
+    </script>
+</body>
 </html>

@@ -39,8 +39,8 @@ h1 {
   margin-bottom: 15px;
   padding-left: 15px;
   scrollbar-width: thin;
-  display: flex; /* Add this to allow flexbox */
-  flex-direction: column; /* Align messages vertically */
+  display: flex; 
+  flex-direction: column; 
   gap: 10px;
 }
 
@@ -54,14 +54,14 @@ h1 {
 
 .message.user {
   background-color: #cce4ff;
-  align-self: flex-end; /* Aligns user messages to the right */
+  align-self: flex-end; 
   border-radius: 12px 12px 0 12px;
   box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
 }
 
 .message.bot {
   background-color: #d1f8d3;
-  align-self: flex-start; /* Aligns bot messages to the left */
+  align-self: flex-start; 
   border-radius: 12px 12px 12px 0;
   box-shadow: 0 2px 5px rgba(72, 186, 45, 0.2);
 }
@@ -122,4 +122,4 @@ h1 {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} 

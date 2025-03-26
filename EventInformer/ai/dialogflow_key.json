@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "proven-serenity-448608-b5",
+  "private_key_id": "7f929121766f82ad104f67be0d84d6410876db0e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDkqtCLjR+OKJba\nCs2dTLRsMFh1C4z3CEvjUiewsegKUsTer9u9BZeBL+djQUfFE3QfI66O4j/QTZ0U\nXnWNXUeTxxbdFr5Q8Fs4DS0toZ7JAfmgQYOUGlE/AJKix4IDRCIovGax+PCEll38\nYqSnrV2OZFE40SCu36FX+0PcasAKUL/zSdjBGTQdkq2+rCl2YHGfrbzdVa7+cmUg\nwO6aB3AXvIs+xKZTLcrBPBB1AcCmsdyyDOY4/jkCKTzFWIHsAfdp2zQoOr9QlQol\n/xkiK8BB/ZNvPZ7Xahh1zo5eG0EamtP9ghfOfM/TmSkZOujmYWMSdXKPTbnvDy5s\nqv4a8vaTAgMBAAECggEAAeQfwWezYRuY08jPFoPx4gssUBt+WPSqnACr71wpTRyO\nIEFYEeIf9KOOyFVb4JdemHtVED1yxag+qlJ1qmuhEenNmJp9jHHQb1A8lWoGxCbO\nB7NDAVCOZ3T7wXjg7GH93lRgjQxAAPi1Ykb2kaRvZ6QQv+WK3adf0Dh1wTboy60H\nSHzx1H/X8QakNZbQwdefzRl7bR/0GCwPACmA+lTrvXTbBUoDCT8m0Xoi5rQeNb04\n9mVaIGU8gLkXZNQfXCGTw1V/dOL0GpQTH4IOgTviSQkGxO91iHy2i+2RkpOg3HiD\nalryYRYFIfCGNqbRdBfiqsaR2IR7wb0C9GvOrX24EQKBgQD4oLuUJ/p+n8oeLQn+\n2sBMmDRnca6o8HOKhAQyWspZ3nvMYlKB2GACj11GXktJSIVtsx5S64xOp3vjhuRj\nq3XLM+DCuJypxvk/XjXGgIEx/aGaKX0ju4t/Bzt1ruzHeckq2c+9+1AVuc9XwU0O\nfnriJc5RLTgapMheaChlZxU7hwKBgQDrcpDznvEoU/GKvJpyFzHKAEFZ22n9flYn\nBky6b3atMHhBJ4e3QCWajf66k96nnMnbz40HnRixscbMh2uG/QjqmYP9EAOjdL3w\nw3NahhZ5DPM1v4D30/W6MR4yHwcQuazfhNMREkcS6rfMEJfXJDKpO2tS76BbK69X\nXtYmuzxnlQKBgATZLY9AEFRzzT81ZaKApYtY1HzH7L4Col4rIOHSf2utOQDNUgqS\nK50hKpJ6uEEfluqCua6oRT4rafEP6lg/ObbStilV7EgrRyUDM01BqENPTN1yvav6\ntket3mz3Ekr5hwC86p4rzm3+B5sQe+4ybTcHwbQ3i4aJfBbLNS51Cib1AoGBAK9i\n+U0xAe2LkmtJkTcZxhH2XLgF9Q9K8/w/+hoK+/mJGJtYSgWcuCZITg9IJVzwM4IV\nOrYINSPxDOjAm73DccfoMWTqb/tr9C2MOrqdFdJ4bheEnxp9fxeCjT7C1C2GUpty\nQxP9bIpP5DgTyDgQE9jylUEDlY00nnnUAGx7n0R9AoGBAIKt1OX4TaGY8BTF21u2\nCn7k7CNo6W1miwX5bEDjBhWd3r1jCftBFvQonS9JKOGQlPNFyofSQ4evH2w7M+G7\n68YA8jVLevfEOwKZSAjnrNv8x/f89FM1KrVCWBv0s5IycWisZtjes576/cKJ7YSr\nVlDIjrFKDFj/ojJcPEt8SLlt\n-----END PRIVATE KEY-----\n",
+  "client_email": "proven-serenity-448608-b5@appspot.gserviceaccount.com",
+  "client_id": "108741363344598441284",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/proven-serenity-448608-b5%40appspot.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
